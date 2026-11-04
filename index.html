@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UC Campus Walking Directions</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<aside id="side">
+<h1>UC Campus Walking Directions</h1>
+<p class="sub">Search a building, or click the map to drop a start and end pin.</p>
+<label for="from">From</label><input id="from" list="pl" placeholder="e.g. Langsam Library" autocomplete="off">
+<label for="to">To</label><input id="to" list="pl" placeholder="e.g. Nippert Stadium" autocomplete="off">
+<datalist id="pl"></datalist>
+<div class="row"><button id="go">Get directions</button><button id="swap">Swap</button></div>
+<div class="row"><button id="loc">Use my location</button></div>
+<div id="msg"></div>
+<p id="sum"></p><ol id="steps"></ol>
+<p class="note" id="status">Loading campus buildings…</p>
+<p class="note">Map data © OpenStreetMap contributors</p>
+</aside>
+<div id="map"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="app.js"></script>
+</body></html>
